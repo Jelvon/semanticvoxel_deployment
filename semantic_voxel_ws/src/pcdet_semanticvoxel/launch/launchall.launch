@@ -1,0 +1,19 @@
+<launch>
+<node pkg="pcdet_semanticvoxel" name="pcdet_semanticvoxel_node" type="pcdet_semanticvoxel_node" output="screen">
+	<param name="input_topic" type="string" value="fusion/fusion_points" />
+	<param name="score_thd_input" type="double" value="0.5" />
+	<param name="nms_overlap_thresh_input" type="double" value="0.01" />
+	<param name="voxel_size_x" type="double" value="0.16" />
+	<param name="voxel_size_y" type="double" value="0.16" />
+	<param name="voxel_size_z" type="double" value="4" />
+	<param name="coors_range_xmin" type="double" value="0" />
+	<param name="coors_range_xmax" type="double" value="-39.68" />
+	<param name="coors_range_ymin" type="double" value="-3" />
+	<param name="coors_range_ymax" type="double" value="69.12" />
+	<param name="coors_range_zmin" type="double" value="39.68" />
+	<param name="coors_range_zmax" type="double" value="1" />
+	<param name="module_loc" type="string" value="/home/xavier/Desktop/semantic_voxel_ws/src/pcdet_semanticvoxel/src/model/pp_fusion_pfn_12000.pt" />
+	<param name="module_before_nms_loc" type="string" value="/home/xavier/Desktop/semantic_voxel_ws/src/pcdet_semanticvoxel/src/model/before_nms_script.pt" />
+	<param name="backbone_loc" type="string" value="/home/xavier/Desktop/semantic_voxel_ws/src/pcdet_semanticvoxel/src/model/backbone.trt" />
+</node>
+</launch>

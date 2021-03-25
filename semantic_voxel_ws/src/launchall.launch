@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find fusion)/launch/launchall.launch" />
+<include file="$(find deeplabv3_mobilnet)/launch/launchall.launch" />
+<include file="$(find pcdet_semanticvoxel)/launch/launchall.launch" />
+<include file="$(find detection_visualization)/launch/launchall.launch" />
+</launch>

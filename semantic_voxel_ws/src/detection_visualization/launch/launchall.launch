@@ -1,0 +1,4 @@
+<launch>
+<node pkg="pcdet_semanticvoxel" name="pcdet_visualization_node" type="pcdet_visualization_node" output="screen">
+</node>
+</launch>

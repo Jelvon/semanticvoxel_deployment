@@ -1,0 +1,6 @@
+<launch>
+<node pkg="fusion" name="fusion_node" type="fusion_node" output="screen">
+	<param name="pointcloud_topic" type="string" value="/kitti/velo/pointcloud" />
+	<param name="image_topic" type="string" value="/mobilnet/result" />
+</node>
+</launch>

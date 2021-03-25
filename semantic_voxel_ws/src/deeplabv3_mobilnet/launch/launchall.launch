@@ -1,0 +1,6 @@
+<launch>
+<node pkg="deeplabv3_mobilnet" name="client" type="client" output="screen">
+	<param name="input_topic" type="string" value="/kitti/camera_color_left/image_raw" />
+	<param name="trtpath" type="string" value="/model/deelabv3_mobilnet.trt" />
+</node>
+</launch>
